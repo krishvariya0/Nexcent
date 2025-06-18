@@ -148,6 +148,207 @@ body {
   background-color: #388e3b;
 }
 
+/* =================================client=============================== */
+
+#client{
+  background-color: #fff;
+  width: 1440;
+  height: 190;
+  gap: 16px;
+  padding-right: 144px;
+  padding-left: 144px;
+  
+
+}
+
+
+
+.client-container .client-hed{
+  margin-top: 1.5rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.client-small{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.client-img{
+  text-align:center;
+  width: 1152;
+  height: 98;
+  justify-content: space-between;
+  display: flex;
+  padding-right: 144px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 144px;
+  margin-top: 1rem;
+}
+
+.comunity{
+  width: 1440;
+  height: 120;
+  gap: 8px;
+}
+
+.comunity-hed{
+  text-align:center;
+}
+
+.comunity-hed1{
+  /* font-family: Inter; */
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.8 ;
+}
+
+.comunity-hed2{
+  /* font-family: Inter; */
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.comunity-small{
+  /* font-family: Inter; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+.comunity-system{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440;
+  height: 280;
+  justify-content: space-between;
+  padding-right: 144px;
+  padding-left: 144px;
+}
+
+.cs{
+  display:grid;
+  width: 299px;
+  align-items: center;
+  height: 260px;
+  gap: 8px;
+  padding-top: 24px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cs img {
+  display: block;
+  margin: auto;
+}
+
+
+.cs h1{
+  /* font-family: Inter; */
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.cs p{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.pixelgrade{
+  width: 1440;
+  height: 433px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 144px;
+  padding-left: 144px;
+}
+
+.pixelgrade img{
+  width: 442px;
+  height: 433px;
+
+}
+
+.pixelgrade-text{
+  display: grid;
+  width: 661px;
+  height: 268px;
+  gap: 32px;
+}
+
+.pixelgrade h1{
+  /* font-family: Inter; */
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  opacity: 0.7;
+}
+
+.pixelgrade p{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  opacity: 0.7;
+}
+
+.pixelgrade a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf4f;
+  width: 151px;
+  height: 52px;
+  gap: 10px;
+  padding-top: 14px;
+  padding-right: 32px;
+  padding-bottom: 14px;
+  padding-left: 32px;
+  border-radius: 4px;
+
+}
+
+.pixelgrade a:hover{
+  background-color: #388e3b;
+}
+
 /* ===============================================media====================== */
 
 @media (max-width: 1112px) {
