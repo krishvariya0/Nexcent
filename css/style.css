@@ -473,3 +473,47 @@ body {
     font-size: 1rem;
   }
 }
+
+/* ==========================client media==================================== */
+
+@media(max-width:1185px){
+  .comunity-system{
+    justify-content: center;
+  }
+}
+
+
+@media(max-width:768px){
+  .client-img{
+    width: 28x;
+    height: 28px;
+    border-radius: 8px;
+    display: none;
+  }
+  .comunity-system{
+    justify-content: center;
+  }
+  .pixelgrade{
+    justify-content: center;
+  }
+  .pixelgrade img{
+    width: 342px;
+    height: 333px;
+  }
+}
+
+@media(max-width:498px){
+  .pixelgrade-text{
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .pixelgrade img{
+    width: 150px;
+    height: 150px;
+  }
+  .pixelgrade-text a{
+    justify-content: center;
+  }
+}
+
