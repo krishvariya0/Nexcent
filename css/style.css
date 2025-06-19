@@ -198,8 +198,9 @@ body {
 }
 
 .comunity{
-  width: 1440;
-  height: 120;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
   gap: 8px;
 }
 
@@ -228,7 +229,7 @@ body {
 }
 
 .comunity-small{
-  /* font-family: Inter; */
+  margin: 16px auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -238,68 +239,54 @@ body {
 }
 
 
-.comunity-system{
+.comunity-system {
   display: flex;
   flex-wrap: wrap;
-  width: 1440;
-  height: 280;
-  justify-content: space-between;
-  padding-right: 144px;
-  padding-left: 144px;
+  justify-content: center;
+  gap: 24px;
+  padding: 2rem;
 }
 
-.cs{
-  display:grid;
-  width: 299px;
-  align-items: center;
-  height: 260px;
-  gap: 8px;
-  margin-top: 1rem;
-  padding-top: 24px;
-  padding-right: 32px;
-  padding-bottom: 24px;
-  padding-left: 32px;
-  border-radius: 8px;
+.cs {
+  display: grid;
+  justify-items: center;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 12px;
+  padding: 24px 32px;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-
 }
 
-.cs:hover{
-  transform:scale(1.05);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+.cs:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .cs img {
-  display: block;
-  margin: auto;
+  width: 80px;
+  height: auto;
 }
 
-
-.cs h1{
-  /* font-family: Inter; */
+.cs h1 {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: 0%;
-  text-align: center;
-  opacity: 0.8;
+  font-size: 22px;
+  line-height: 30px;
+  opacity: 0.85;
 }
 
-.cs p{
-  font-family: Inter;
+.cs p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0%;
-  text-align: center;
   opacity: 0.7;
 }
 
 .pixelgrade{
-  width: 1440;
-  height: 433px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -311,6 +298,8 @@ body {
 .pixelgrade img{
   width: 442px;
   height: 433px;
+  margin-right: 2rem;
+  /* justify-content: center; */
 
 }
 
@@ -344,12 +333,9 @@ body {
   color: #fff;
   background-color: #4caf4f;
   width: 151px;
-  height: 52px;
+  height: auto;
   gap: 10px;
-  padding-top: 14px;
-  padding-right: 32px;
-  padding-bottom: 14px;
-  padding-left: 32px;
+  padding: 11px 32px;
   border-radius: 4px;
 
 }
@@ -489,31 +475,96 @@ body {
   .comunity-system{
     justify-content: center;
   }
+
+  .pixelgrade{
+    justify-content: center;
+  }
 }
 
 
 @media(max-width:768px){
-  .client-img{
+  .cs{
+    height: auto;
+  }
+  .client-img img{
     width: 28x;
     height: 28px;
-    border-radius: 8px;
     display: none;
+
   }
   .comunity-system{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .pixelgrade{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pixelgrade img{
+    width: 342px;
+    height: 333px;
+    justify-content: center;
+  }
+}
+
+@media(max-width:530px){
+  .cs{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .comunity-system{
+    width: 250px;
+    max-width: 350px;
+    margin: 0 auto;
+    justify-content: center;
+
+  }
+  .pixelgrade{
+    margin-top: 5rem;
+  }
+  .pixelgrade-text h1{
+    line-height: 1.6rem;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .pixelgrade-text p{
+    text-align: center;
+  }
+  .pixelgrade-text img{
+     width: 342px;
+      height: 333px;  
+  }
+  .pixelgrade-text a{
+    margin-left: 2.5rem;
+    box-align: center;
+
+  }
+}
+
+@media(max-width:498px){
+
+  .comunity-system{
+     width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .cs{
+    width: 250px;
+    max-width: 350px;
+    margin: 0 auto;
     justify-content: center;
   }
   .pixelgrade{
     justify-content: center;
   }
-  .pixelgrade img{
-    width: 342px;
-    height: 333px;
-  }
-}
-
-@media(max-width:498px){
   .pixelgrade-text{
-    font-size: 10px;
+    font-size: 8px;
     text-align: center;
   }
 
@@ -522,7 +573,15 @@ body {
     height: 150px;
   }
   .pixelgrade-text a{
+    margin-top: -1rem;
+    margin-left: -0.8rem;
     justify-content: center;
+    font-size: medium;
   }
+
+
+  
 }
+
+
 
