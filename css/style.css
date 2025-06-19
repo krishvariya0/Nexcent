@@ -186,14 +186,10 @@ body {
 
 .client-img{
   text-align:center;
-  width: 1152;
   height: 98;
   justify-content: space-between;
   display: flex;
-  padding-right: 144px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 144px;
+  padding: 16px 20px;
   margin-top: 1rem;
 }
 
