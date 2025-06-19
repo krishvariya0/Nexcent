@@ -280,6 +280,22 @@ body {
 .pixelgrade a:hover {
   background-color: #388e3b;
 }
+/* ==========================busnes=================== */
+
+.bus-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa;
+  gap: 2rem;
+}
+
+.bus-img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px 80px;
+}
+
 
 /* ===================== Media Queries ===================== */
 @media (max-width: 994px) {
