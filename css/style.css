@@ -150,24 +150,23 @@ body {
 
 /* =================================client=============================== */
 
-#client{
+.client{
   background-color: #fff;
   width: 1440;
   height: 190;
   gap: 16px;
   padding-right: 144px;
   padding-left: 144px;
-  
 
 }
 
 
 
-.client-hed{
+.client-container .client-hed{
   margin-top: 1.5rem;
   font-family: Inter;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 36px;
   line-height: 44px;
   letter-spacing: 0%;
   text-align: center;
@@ -186,17 +185,18 @@ body {
 
 .client-img{
   text-align:center;
+  width: 1152;
   height: 98;
   justify-content: space-between;
   display: flex;
-  padding: 16px 20px;
+  padding: 16px 32px;
   margin-top: 1rem;
 }
 
 .comunity{
   margin-top: 2rem;
-  width: 100%;
-  height: auto;
+  width: 1440;
+  height: 120;
   gap: 8px;
 }
 
@@ -207,25 +207,27 @@ body {
 .comunity-hed1{
   /* font-family: Inter; */
   font-weight: 600;
-  font-size: 25px;
+  font-size: 36px;
   line-height: 44px;
   letter-spacing: 0%;
   text-align: center;
-  opacity: 0.7 ;
+  opacity: 0.8 ;
 }
 
 .comunity-hed2{
   /* font-family: Inter; */
   font-weight: 600;
-  font-size: 25px;
+  font-size: 36px;
   line-height: 44px;
   letter-spacing: 0%;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .comunity-small{
-  margin: 16px auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem   ;
+  /* font-family: Inter; */
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -235,54 +237,68 @@ body {
 }
 
 
-.comunity-system {
+.comunity-system{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  padding: 2rem;
+  width: 1440;
+  height: 280;
+  justify-content: space-between;
+  padding-right: 144px;
+  padding-left: 144px;
 }
 
-.cs {
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  gap: 12px;
-  padding: 24px 32px;
+.cs{
+  display:grid;
+  width: 299px;
+  align-items: center;
+  height: 260px;
+  gap: 8px;
+  margin-top: 1rem;
+  padding-top: 24px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
   border-radius: 8px;
-  background-color: #fff;
-  max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+
 }
 
-.cs:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+.cs:hover{
+  transform:scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .cs img {
-  width: 80px;
-  height: auto;
+  display: block;
+  margin: auto;
 }
 
-.cs h1 {
+
+.cs h1{
+  /* font-family: Inter; */
   font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
-  opacity: 0.85;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.8;
 }
 
-.cs p {
+.cs p{
+  font-family: Inter;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
   opacity: 0.7;
 }
 
 .pixelgrade{
-  width: 100%;
-  height: auto;
+  width: 1440;
+  height: 433px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -294,7 +310,6 @@ body {
 .pixelgrade img{
   width: 442px;
   height: 433px;
-  margin-right: 2rem;
   /* justify-content: center; */
 
 }
@@ -329,9 +344,12 @@ body {
   color: #fff;
   background-color: #4caf4f;
   width: 151px;
-  height: auto;
+  height: 52px;
   gap: 10px;
-  padding: 11px 32px;
+  padding-top: 14px;
+  padding-right: 32px;
+  padding-bottom: 14px;
+  padding-left: 32px;
   border-radius: 4px;
 
 }
@@ -475,10 +493,6 @@ body {
   .pixelgrade{
     justify-content: center;
   }
-
-  .client-hed{
-    font-size: 30px;
-  }
 }
 
 
@@ -486,16 +500,11 @@ body {
   .cs{
     height: auto;
   }
-  .client-img img{
-    display: grid;
-    justify-content: center;
-    grid-auto-rows: auto;
+  .client-img{
     width: 28x;
     height: 28px;
+    border-radius: 8px;
     /* display: none; */
-  }
-  .client-hed{
-    font-size: 30px;
   }
   .comunity-system{
     justify-content: center;
@@ -514,20 +523,11 @@ body {
 }
 
 @media(max-width:530px){
-  .client-hed{
-    font-size: 30px;
-  }
   .cs{
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    justify-content: center;
+    width: fixed;
   }
   .comunity-system{
-    width: 250px;
-    max-width: 350px;
-    margin: 0 auto;
-    justify-content: center;
+    width: 100%;
 
   }
   .pixelgrade{
@@ -535,7 +535,7 @@ body {
   }
   .pixelgrade-text h1{
     line-height: 1.6rem;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
     text-align: center;
   }
@@ -543,8 +543,7 @@ body {
     text-align: center;
   }
   .pixelgrade-text img{
-     width: 342px;
-      height: 333px;  
+    width: fit-content;
   }
   .pixelgrade-text a{
     margin-left: 2.5rem;
@@ -554,20 +553,6 @@ body {
 }
 
 @media(max-width:498px){
-
-  .comunity-system{
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  .cs{
-    width: 250px;
-    max-width: 350px;
-    margin: 0 auto;
-    justify-content: center;
-  }
   .pixelgrade{
     justify-content: center;
   }
@@ -582,14 +567,8 @@ body {
   }
   .pixelgrade-text a{
     margin-top: -1rem;
-    margin-left: -0.8rem;
     justify-content: center;
     font-size: medium;
   }
-
-
-  
 }
-
-
 
