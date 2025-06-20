@@ -300,13 +300,98 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f5f7fa;
-  gap: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 15rem;
 }
 
 .bus-img{
+
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 40px 80px;
+}
+
+.bus-ctn img{
+  width: 40px;
+  height: 40px;
+}
+
+.bus-text h1{
+  font-size: 36px;
+}
+
+.bus-text .bus-text2{
+  color: #4caf4f;
+}
+
+/* =========================tesla================================*/
+
+.tesla-container{
+  padding: 12px 0;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:10rem;
+}
+.tesla-img img{
+  width: 336px;
+  height: 336px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex: 0 0 336px;
+}
+
+.tesla-text .tesla-text-main p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4d4d4d;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  line-height: 1.6;  
+  flex: 1; /* Takes remaining space */
+  max-width: 700px;
+}
+
+.tesla-text .tesla-text-main h1 {
+  color: #4caf4f;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tesla-text .tesla-text-main h4 {
+  color: #6b7280;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+.t-img2 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.t-img2 img {
+  width: 40px;
+  height: auto;
+}
+.t-link {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.t-link a {
+  color: #4caf4f;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.t-link a:hover {
+  text-decoration: underline;
 }
 
 
@@ -361,6 +446,9 @@ body {
 
   .client-img {
     justify-content: center;
+  }
+  .bus-container{
+    gap: 10rem;
   }
 
   .bus-img {
@@ -442,11 +530,13 @@ body {
   .bus-container {
     flex-direction: column;
     padding: 2rem 1rem;
+    gap: 4rem;
+    text-align: center;
   }
 
   .bus-img {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 
   .cs {
@@ -577,8 +667,8 @@ body {
   .hamburger-line {
     display: flex;
     position: absolute;
-    top: 35px;
-    right: 20px;
+    top: 30px;
+    right: 40px;
     z-index: 1001;
   }
 
