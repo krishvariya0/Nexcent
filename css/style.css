@@ -258,7 +258,7 @@ body {
 
 .pixelgrade img {
   flex: 1 1 45%;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .pixelgrade-text {
@@ -400,20 +400,40 @@ body {
     justify-content: center;
   }
 
+  .comunity-hed .comunity-hed1, .comunity-hed2{
+    font-size: 25px;
+  }
+
+  .comunity-hed .comunity-small{
+    font-size: 15px;
+  }
+
   .comunity-system {
     padding: 0 1rem;
     justify-content: center;
   }
 
   .pixelgrade {
-    flex-direction: column-reverse;
-    padding: 2rem 1rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .pix-img {
+    width: 100%;
     text-align: center;
   }
 
-  .pixelgrade-text {
-    align-items: center;
+  .pix-img img {
+    max-width: 100%;
+    height: auto;
   }
+
+  .pixelgrade-text {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
 
   .pixelgrade-text h1 {
     font-size: 28px;
@@ -433,7 +453,6 @@ body {
     width: 100%;
   }
 }
-
 
 /* ========== Devices up to 475px ========== */
 @media (max-width: 475px) {
@@ -459,10 +478,14 @@ body {
     width: 120px;
   }
 
-  .comunity-hed1,
-  .comunity-hed2{
-    font-size: 50px;
 
+
+.client-hed{
+  font-size: 30px;
+}
+
+.comunity-hed .comunity-hed1, .comunity-hed2{
+  font-size: 25px;
 }
 
   .cs {
@@ -479,7 +502,7 @@ body {
   }
 
   .pixelgrade-text h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .pixelgrade-text p {
