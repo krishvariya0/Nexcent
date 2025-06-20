@@ -459,6 +459,12 @@ body {
     width: 120px;
   }
 
+  .comunity-hed1,
+  .comunity-hed2{
+    font-size: 50px;
+
+}
+
   .cs {
     width: 100%;
     padding: 20px;
