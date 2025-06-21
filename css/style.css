@@ -406,22 +406,20 @@ body {
 
 /* =======================marketing======================= */
 
-/* Container */
+
 .marketing-container {
   text-align: center;
   background-color: #fff;
   padding: 2rem 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
-
-/* Title */
 .marketing-text h1 {
   font-size: 35px;
   font-weight: 600;
   opacity: 0.8;
 }
 
-/* Paragraph */
+
 .marketing-text p {
   font-size: 15px;
   opacity: 0.8;
@@ -429,7 +427,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* Card wrapper */
+
 .marketing-img {
   display: flex;
   justify-content: center;
@@ -438,7 +436,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Card container */
+
 .mark-img {
   position: relative;
   width: 317px;
@@ -448,7 +446,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Image */
+
 .mark-img img {
   width: 100%;
   height: 240px;
@@ -456,7 +454,7 @@ body {
   display: block;
 }
 
-/* Text box (hidden initially) */
+
 .mark-text {
   position: absolute;
   bottom: 0;
@@ -470,12 +468,12 @@ body {
   border-radius: 0 0 8px 8px;
 }
 
-/* On hover, show text box */
+
 .mark-img:hover .mark-text {
   transform: translateY(0%);
 }
 
-/* Text inside box */
+
 .mark-text h3 {
   font-size: 16px;
   margin-bottom: 12px;
@@ -489,6 +487,35 @@ body {
   font-size: 14px;
 }
 
+/* ===================demo============== */
+
+.demo-container{
+  margin-top: 12px;
+  padding-top: 12px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+.demo-hed{
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.demo-container a{
+  text-decoration: none;
+  background-color: #4caf4f;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.demo-container a:hover{
+  background-color: #388e3b;
+}
 /* ===================== Media Queries ===================== */
 
 /* ========== Large Screens ========== */
@@ -553,7 +580,7 @@ body {
     padding: 0 3rem;
     justify-content: center;
   }
-}
+
 
 .tesla-text{
   text-align: center;
@@ -565,6 +592,8 @@ body {
 
 .tesla-container{
   gap: 10px;
+}
+
 }
 /* ========== Extra Small Devices (mobile-first) ========== */
 @media (max-width: 767px) {
@@ -647,8 +676,13 @@ body {
   .cs {
     width: 100%;
   }
+
+
+.demo-hed{
+  font-size: 40px;
 }
 
+}
 /* ========== Devices up to 475px ========== */
 @media (max-width: 475px) {
   .main-hed,
@@ -719,6 +753,13 @@ body {
   }
 }
 
+.tesla-text-main{
+  text-align: center;
+}
+
+.t-img2 {
+ 
+}
 
 
 /* ========== Devices up to 375px ========== */
@@ -764,7 +805,7 @@ body {
   .nav-logo img.logo {
     width: 100px;
   }
-}
+
 
 .tesla-img img{
   width: 100%;
@@ -777,7 +818,11 @@ body {
   gap: 10px;
 }
 
+.demo-hed h1{
+  font-size: 30px;
+}
 
+}
 
 @media (max-width: 994px) {
   .hamburger-line {
