@@ -207,7 +207,8 @@ body {
 .comunity-system {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; 
+  gap: 2rem;
   padding: 0 144px;
   margin-bottom: 2rem;
 }
@@ -367,6 +368,12 @@ body {
   font-size: 14px;
   margin-bottom: 1.5rem;
 }
+.t-img{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 .t-img2 {
   display: flex;
   align-items: center;
@@ -379,8 +386,10 @@ body {
   height: auto;
 }
 .t-link {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .t-link a {
@@ -461,6 +470,17 @@ body {
   }
 }
 
+.tesla-text{
+  text-align: center;
+}
+.t-img{
+  justify-content: center;
+}
+
+
+.tesla-container{
+  gap: 10px;
+}
 /* ========== Extra Small Devices (mobile-first) ========== */
 @media (max-width: 767px) {
   .main-content {
@@ -659,6 +679,17 @@ body {
   .nav-logo img.logo {
     width: 100px;
   }
+}
+
+.tesla-img img{
+  width: 100%;
+}
+
+.t-img .t-img2{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
 
 
