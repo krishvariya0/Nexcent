@@ -94,7 +94,7 @@ body {
 /* ===================== Main Section ===================== */
 #main {
   background-color: #f5f7fa;
-  padding: 6rem 2rem;
+  padding: 2rem 2rem;
   /* width: 100%; */
 }
 
@@ -892,9 +892,7 @@ body {
   text-align: center;
 }
 
-.t-img2 {
- 
-}
+
 
 
 /* ========== Devices up to 375px ========== */
@@ -963,7 +961,7 @@ body {
   .hamburger-line {
     display: flex;
     position: absolute;
-    top: 30px;
+    /* top: 30px; */
     right: 40px;
     z-index: 1001;
   }
