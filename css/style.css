@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
 /* ===================== Reset ===================== */
 * {
   margin: 0;
@@ -9,6 +11,11 @@
 body {
   font-family: "Segoe UI", sans-serif;
 }
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 
 .container {
   width: 100%;
@@ -38,18 +45,21 @@ body {
 }
 
 .nav-links {
+  font-family: inter;
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 
 .nav-links li a {
+  font-family: inter;
   text-decoration: none;
   color: black;
   font-size: large;
 }
 
 .bouton a {
+  font-family: inter;
   font-size: large;
   text-decoration: none;
   color: #4caf4f;
@@ -99,15 +109,18 @@ body {
 }
 
 .main-content {
+  font-family: inter;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .main-text {
+  font-family: inter;
   flex: 1 1 50%;
+  padding-left: 6rem;
 }
 
 .main-img {
@@ -123,26 +136,34 @@ body {
 
 .main-hed,
 .main-hed2 {
+  letter-spacing: 2px;
+  font-family: inter;
   font-weight: 700;
   font-size: clamp(2rem, 6vw, 4rem);
   line-height: 1.2;
 }
 
 .main-hed {
+  letter-spacing: 2px;
+  font-family: inter;
   opacity: 0.7;
 }
 
 .main-hed2 {
+  letter-spacing: 2px;
+  font-family: inter;
   color: #388e3b;
 }
 
 .main-small {
+  font-family: inter;
   opacity: 0.7;
   margin-top: 1rem;
   font-size: 1rem;
 }
 
 #main a.Register {
+  font-family: inter;
   text-decoration: none;
   background-color: #4caf4f;
   color: white;
@@ -159,14 +180,18 @@ body {
 
 /* ===================== Clients ===================== */
 .client-container {
+  font-family: inter;
   text-align: center;
   margin: 2rem 0;
 }
 
 .client-hed {
+  margin-top: 2rem;
+  font-family: inter;
   font-weight: 600;
   font-size: 36px;
   opacity: 0.7;
+  margin-bottom: 5px;
 }
 
 .client-small {
@@ -193,23 +218,25 @@ body {
 
 .comunity-hed1,
 .comunity-hed2 {
+  font-family: inter;
   font-weight: 600;
   font-size: 36px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .comunity-small {
+  font-family: inter;
   font-weight: 400;
   font-size: 16px;
-  margin: 1rem 0;
-  opacity: 0.8;
+  margin: 8px 0;
+  opacity: 0.7;
 }
 
 .comunity-system {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  gap: 2rem;
+  justify-content: center;
+  gap: 5rem;
   padding: 0 144px;
   margin-bottom: 2rem;
 }
@@ -228,7 +255,7 @@ body {
 }
 
 .cs:hover {
-  transform: scale(1.05);
+  transform: scyale(1.05);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -237,12 +264,14 @@ body {
 }
 
 .cs h1 {
+  font-family: inter;
   font-weight: 700;
   font-size: 28px;
   opacity: 0.8;
 }
 
 .cs p {
+  font-family: inter;
   font-weight: 400;
   font-size: 14px;
   opacity: 0.7;
@@ -252,37 +281,48 @@ body {
 .pixelgrade {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 4rem 9%;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .pixelgrade img {
   flex: 1 1 45%;
+  max-width: 400px;
   /* max-width: 500px; */
 }
 
 .pixelgrade-text {
+  font-family: inter;
   display: flex;
   flex-direction: column;
   flex: 1 1 50%;
+  max-width: 600px;
   gap: 32px;
 }
 
 .pixelgrade-text h1 {
+  font-family: inter;
+  margin-bottom: 1rem;
+  /* letter-spacing: 2px; */
   font-weight: 600;
-  font-size: 36px;
+  font-size: 39px;
   opacity: 0.7;
 }
 
 .pixelgrade-text p {
+  font-family: inter;
   font-weight: 400;
   font-size: 14px;
   opacity: 0.7;
+  
 }
 
 .pixelgrade a {
+  font-family: inter;
   text-decoration: none;
   background-color: #4caf4f;
   color: white;
@@ -297,47 +337,69 @@ body {
 }
 /* ==========================busnes=================== */
 
-.bus-container{
+.bus-container {
+  font-family: inter;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f5f7fa;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  gap: 15rem;
+  padding: 4rem 0;
+  gap: 8rem;
 }
 
-.bus-img{
-
+.bus-img {
+  padding: 8px 0;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 40px 80px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.bus-ctn img{
+.bus-ctn img {
   width: 40px;
   height: 40px;
+  object-fit: contain;
 }
 
-.bus-text h1{
-  font-size: 36px;
+.bus-ctn {
+  display: flex;
+  align-items: flex-start; /* <- change this */
+  gap: 20px; /* <- slightly more gap like Image 1 */
+  flex: 1 1 300px;
 }
 
-.bus-text .bus-text2{
+.bus-text h1 {
+  margin-bottom: 3px;
+  font-size: 37px;
+  opacity: 0.7;
+}
+
+.bus-text .bus-text2 {
+  margin-bottom: 1rem;
+  font-size: 37px;
+  opacity: 0.9;
   color: #4caf4f;
 }
 
+.bus-ctn h1 {
+  font-size: 30px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.bus-img .bus-ctn p{
+  opacity: 0.7;
+}
 /* =========================tesla================================*/
 
-.tesla-container{
+.tesla-container {
   padding: 12px 0;
   background-color: #f5f7fa;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:10rem;
+  gap:80px
 }
-.tesla-img img{
+.tesla-img img {
   width: 336px;
   height: 336px;
   border-radius: 8px;
@@ -346,17 +408,22 @@ body {
 }
 
 .tesla-text .tesla-text-main p {
+  text-align: left;
+  justify-content: flex-start;
+  font-family: inter;
   font-weight: 400;
   font-size: 16px;
   color: #4d4d4d;
   opacity: 0.8;
   margin-bottom: 1rem;
-  line-height: 1.6;  
-  flex: 1; /* Takes remaining space */
+  line-height: 1.6;
+   flex: 1;/* Takes remaining space */
   max-width: 700px;
 }
 
 .tesla-text .tesla-text-main h1 {
+  text-align: left;
+  font-family: inter;
   color: #4caf4f;
   font-size: 18px;
   font-weight: 600;
@@ -364,12 +431,18 @@ body {
 }
 
 .tesla-text .tesla-text-main h4 {
+  text-align: left;
+  font-family: inter;
   color: #6b7280;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 1.5rem;
 }
-.t-img{
+
+.tesla-text-main.p h1,h4{
+  justify-content: left;
+}
+.t-img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -394,6 +467,7 @@ body {
 }
 
 .t-link a {
+  font-family: inter;
   color: #4caf4f;
   font-weight: 600;
   text-decoration: none;
@@ -404,9 +478,7 @@ body {
   text-decoration: underline;
 }
 
-
 /* =======================marketing======================= */
-
 
 .marketing-container {
   text-align: center;
@@ -415,19 +487,19 @@ body {
   margin-bottom: 50px;
 }
 .marketing-text h1 {
+  font-family: inter;
   font-size: 35px;
   font-weight: 600;
   opacity: 0.8;
 }
 
-
 .marketing-text p {
+  font-family: inter;
   font-size: 15px;
   opacity: 0.8;
   margin-top: 8px;
   margin-bottom: 8px;
 }
-
 
 .marketing-img {
   display: flex;
@@ -436,7 +508,6 @@ body {
   gap: 2rem;
   margin-top: 2rem;
 }
-
 
 .mark-img {
   position: relative;
@@ -447,7 +518,6 @@ body {
   transition: all 0.3s ease;
 }
 
-
 .mark-img img {
   width: 100%;
   height: 240px;
@@ -455,8 +525,8 @@ body {
   display: block;
 }
 
-
 .mark-text {
+  font-family: inter;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -469,19 +539,19 @@ body {
   border-radius: 0 0 8px 8px;
 }
 
-
 .mark-img:hover .mark-text {
   transform: translateY(0%);
 }
 
-
 .mark-text h3 {
+  font-family: inter;
   font-size: 16px;
   margin-bottom: 12px;
   color: #333;
 }
 
 .mark-text a {
+  font-family: inter;
   text-decoration: none;
   color: #4caf4f;
   font-weight: 600;
@@ -490,20 +560,22 @@ body {
 
 /* ===================demo============== */
 
-.demo-container{
+.demo-container {
   margin-top: 12px;
   padding-top: 12px;
   background-color: #f5f7fa;
   text-align: center;
 }
-.demo-hed{
+.demo-hed {
+  font-family: inter;
   font-size: 60px;
   font-weight: 500;
   margin-bottom: 12px;
   opacity: 0.7;
 }
 
-.demo-container a{
+.demo-container a {
+  font-family: inter;
   text-decoration: none;
   background-color: #4caf4f;
   color: white;
@@ -514,10 +586,9 @@ body {
   margin-bottom: 12px;
 }
 
-.demo-container a:hover{
+.demo-container a:hover {
   background-color: #388e3b;
 }
-
 
 /* ==================== Footer ==================== */
 .footer {
@@ -537,6 +608,7 @@ body {
 .footer-left {
   flex: 1;
   min-width: 220px;
+  
 }
 
 .footer-logo {
@@ -545,12 +617,14 @@ body {
 }
 
 .footer-left p {
+  font-family: inter;
   margin-bottom: 1rem;
   opacity: 0.8;
   line-height: 1.6;
 }
 
 .footer-icons a {
+  font-family: inter;
   color: #fff;
   margin-right: 12px;
   font-size: 18px;
@@ -565,7 +639,8 @@ body {
   display: flex;
   gap: 4rem;
   flex: 2;
-  justify-content: space-between;
+  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -576,12 +651,14 @@ body {
 }
 
 .footer-column h3 {
+  font-family: inter;
   margin-bottom: 1rem;
   font-size: 16px;
   color: #ffffff;
 }
 
 .footer-column a {
+  font-family: inter;
   text-decoration: none;
   color: #bbbbbb;
   margin-bottom: 8px;
@@ -594,10 +671,12 @@ body {
 
 .footer-subscribe {
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
+  max-width: 300px;
 }
 
 .footer-subscribe h3 {
+  font-family: inter;
   margin-bottom: 1rem;
   font-size: 16px;
 }
@@ -651,6 +730,7 @@ body {
   }
 }
 
+
 /* ===================== Media Queries ===================== */
 
 /* ========== Large Screens ========== */
@@ -703,10 +783,11 @@ body {
   .client-img {
     justify-content: center;
   }
-  .bus-container{
-    gap: 10rem;
+  .bus-container {
+    gap: 5rem;
   }
 
+  
   .bus-img {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -716,19 +797,19 @@ body {
     justify-content: center;
   }
 
+  .tesla-text {
+    text-align: center;
+  }
+  .t-img {
+    justify-content: center;
+  }
 
-.tesla-text{
+  .tesla-container {
+    gap: 10px;
+  }
+}
+.tesla-text .tesla-text-main{
   text-align: center;
-}
-.t-img{
-  justify-content: center;
-}
-
-
-.tesla-container{
-  gap: 10px;
-}
-
 }
 /* ========== Extra Small Devices (mobile-first) ========== */
 @media (max-width: 767px) {
@@ -757,11 +838,12 @@ body {
     justify-content: center;
   }
 
-  .comunity-hed .comunity-hed1, .comunity-hed2{
+  .comunity-hed .comunity-hed1,
+  .comunity-hed2 {
     font-size: 25px;
   }
 
-  .comunity-hed .comunity-small{
+  .comunity-hed .comunity-small {
     font-size: 15px;
   }
 
@@ -791,7 +873,6 @@ body {
     padding: 0 1rem;
   }
 
-
   .pixelgrade-text h1 {
     font-size: 28px;
   }
@@ -812,12 +893,18 @@ body {
     width: 100%;
   }
 
+  .demo-hed {
+    font-size: 40px;
+  }
 
-.demo-hed{
-  font-size: 40px;
+.tesla-text .tesla-text-main p,
+.tesla-text .tesla-text-main h1,
+.tesla-text .tesla-text-main h4{
+  text-align: center;
 }
 
 }
+
 /* ========== Devices up to 475px ========== */
 @media (max-width: 475px) {
   .main-hed,
@@ -842,15 +929,14 @@ body {
     width: 120px;
   }
 
+  .client-hed {
+    font-size: 30px;
+  }
 
-
-.client-hed{
-  font-size: 30px;
-}
-
-.comunity-hed .comunity-hed1, .comunity-hed2{
-  font-size: 25px;
-}
+  .comunity-hed .comunity-hed1,
+  .comunity-hed2 {
+    font-size: 25px;
+  }
 
   .cs {
     width: 100%;
@@ -886,14 +972,30 @@ body {
     padding: 8px 16px;
     gap: 10px;
   }
-}
 
-.tesla-text-main{
+
+.tesla-text-main {
   text-align: center;
 }
+.bus-ctn h1{
+  font-size: 25px;
+}
+
+.tesla-text .tesla-text-main p,
+.tesla-text .tesla-text-main h1,
+.tesla-text .tesla-text-main h4{
+  padding: 0 20px;
+}
+
+.t-img .t-img2 img {
+  justify-content: space-between;
+padding-left:20px;
+height: 40px;
+width: 40px;
+}
 
 
-
+}
 
 /* ========== Devices up to 375px ========== */
 @media (max-width: 375px) {
@@ -939,22 +1041,24 @@ body {
     width: 100px;
   }
 
-
-.tesla-img img{
-  width: 100%;
+  .bus-ctn h1{
+  font-size: 20px;
+  padding: 0 5px;
 }
+  .tesla-img img {
+    width: 100%;
+  }
 
-.t-img .t-img2{
-  display:flex;
-  flex-direction:row;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
+  .t-img .t-img2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
 
-.demo-hed h1{
-  font-size: 30px;
-}
-
+  .demo-hed h1 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 994px) {
@@ -1041,7 +1145,6 @@ body {
   .main-img img {
     max-width: 300px;
   }
-
 }
 @media (max-width: 530px) {
   .main-hed,
@@ -1053,5 +1156,9 @@ body {
     padding: 12px 24px;
     font-size: 1rem;
   }
-
 }
+
+/* .no-scroll {
+  overflow: hidden;
+  height: 100vh;
+} */

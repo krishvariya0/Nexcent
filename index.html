@@ -118,7 +118,7 @@
         </div>
 
         <div class="pixelgrade-text">
-          <h1>The unseen of spending three years at Pixelgrade</h1>
+          <h1>The unseen of spending three  <br> years at Pixelgrade</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
             amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
@@ -179,7 +179,7 @@
         </div>
 
         <div class="pixelgrade-text">
-          <h1>How to design your site footer like we did</h1>
+          <h1>How to design your site footer like <br>we did</h1>
           <p>
             Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
             augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
@@ -310,6 +310,21 @@
     </div>
   </div>
 </footer>
+
+
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+
+  menuToggle.addEventListener("change", function () {
+    if (this.checked) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  });
+</script>
+
 
   </body>
 </html>
