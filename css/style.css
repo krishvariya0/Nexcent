@@ -234,10 +234,9 @@ body {
 
 .comunity-system {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
-  padding: 0 144px;
+  gap: 25px;
+  /* padding: 0 144px; */
   margin-bottom: 2rem;
 }
 
@@ -285,7 +284,7 @@ body {
   justify-content: center;
   /* justify-content: space-between; */
   align-items: center;
-  padding: 4rem 9%;
+  padding: 4rem 20px;
   gap: 3rem;
 }
 
@@ -296,6 +295,7 @@ body {
 }
 
 .pixelgrade-text {
+  /* align-items: center; */
   font-family: inter;
   display: flex;
   flex-direction: column;
@@ -392,7 +392,7 @@ body {
 /* =========================tesla================================*/
 
 .tesla-container {
-  padding: 12px 0;
+  padding: 50px 20px;
   background-color: #f5f7fa;
   display: flex;
   justify-content: center;
@@ -481,6 +481,8 @@ body {
 /* =======================marketing======================= */
 
 .marketing-container {
+/* box-sizing: content-box; */
+  margin: 50px 0;
   text-align: center;
   background-color: #fff;
   padding: 2rem 1rem;
@@ -793,23 +795,23 @@ body {
   }
 
   .comunity-system {
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
     justify-content: center;
   }
 
   .tesla-text {
     text-align: center;
   }
-  .t-img {
-    justify-content: center;
-  }
+
 
   .tesla-container {
     gap: 10px;
   }
-}
+
 .tesla-text .tesla-text-main{
   text-align: center;
+}
+
 }
 /* ========== Extra Small Devices (mobile-first) ========== */
 @media (max-width: 767px) {
@@ -848,13 +850,16 @@ body {
   }
 
   .comunity-system {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     justify-content: center;
   }
 
   .pixelgrade {
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
+    align-items: center;
+  }
+  .pixelgrade-text{
     align-items: center;
   }
 
@@ -870,7 +875,7 @@ body {
 
   .pixelgrade-text {
     width: 100%;
-    padding: 0 1rem;
+
   }
 
   .pixelgrade-text h1 {
@@ -888,6 +893,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
+.bus-img .bus-ctn { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center; 
+    gap: 1rem; 
+  }
 
   .cs {
     width: 100%;
@@ -900,11 +912,20 @@ body {
 .tesla-text .tesla-text-main p,
 .tesla-text .tesla-text-main h1,
 .tesla-text .tesla-text-main h4{
-  text-align: center;
+  text-align: justify;
+  padding: 0 20px;
 }
 
 }
 
+.demo-container {
+  font-size: 25px;
+}
+
+.demo-container a{
+  font-size: 25px;
+  padding: 10px 25px;
+}
 /* ========== Devices up to 475px ========== */
 @media (max-width: 475px) {
   .main-hed,
@@ -973,7 +994,9 @@ body {
     gap: 10px;
   }
 
-
+.tesla-container{
+  gap: 30px;
+}
 .tesla-text-main {
   text-align: center;
 }
@@ -994,7 +1017,21 @@ height: 40px;
 width: 40px;
 }
 
+  .t-img {
+    justify-content: space-around;
+  }
 
+
+  .demo-container {
+    padding: 0 20px;
+  font-size: 15px;
+}
+
+.demo-container a{
+  font-size: 25px;
+  padding: 10px 25px;
+}
+/* ==
 }
 
 /* ========== Devices up to 375px ========== */
@@ -1085,13 +1122,21 @@ width: 40px;
     transition: right 0.4s ease-in-out;
     z-index: 1000;
   }
-
+ .nav-links .bouton {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
   .nav-links {
     flex-direction: column;
+    align-items: center;
   }
 
   .nav-links li a {
-    color: #388e3b;
+    color: #fff;
     font-size: 1.2rem;
   }
 
@@ -1104,15 +1149,15 @@ width: 40px;
   }
 
   #menu-toggle:checked ~ .bouton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    position: fixed;
-    bottom: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001
   }
 
   #menu-toggle:checked ~ .hamburger-line .line1 {
@@ -1145,6 +1190,23 @@ width: 40px;
   .main-img img {
     max-width: 300px;
   }
+  .comunity-system {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cs{
+    width:100%;
+  }
+
+  .bus-img .bus-ctn { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center; 
+    gap: 1rem; 
+  }
+
+  
 }
 @media (max-width: 530px) {
   .main-hed,
