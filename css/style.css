@@ -1013,7 +1013,7 @@ body {
 }
 
 .t-img .t-img2 img {
-  justify-content: space-between;
+justify-content: space-between;
 padding-left:20px;
 height: 40px;
 width: 40px;
@@ -1021,6 +1021,10 @@ width: 40px;
 
 .t-img {
     justify-content: space-around;
+    gap:10px;
+  }
+
+  .t-img2 {
     gap: 1rem;
   }
 
