@@ -301,7 +301,7 @@ body {
   flex-direction: column;
   flex: 1 1 50%;
   max-width: 600px;
-  gap: 32px;
+  gap: 15px;
 }
 
 .pixelgrade-text h1 {
@@ -564,7 +564,8 @@ body {
 
 .demo-container {
   margin-top: 12px;
-  padding-top: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f5f7fa;
   text-align: center;
 }
@@ -906,7 +907,7 @@ body {
   }
 
   .demo-hed {
-    font-size: 40px;
+    font-size: 30px;
   }
 
 .tesla-text .tesla-text-main p,
@@ -919,11 +920,12 @@ body {
 }
 
 .demo-container {
+  padding: 30px 0;
   font-size: 25px;
 }
 
 .demo-container a{
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px 25px;
 }
 /* ========== Devices up to 475px ========== */
@@ -995,7 +997,7 @@ body {
   }
 
 .tesla-container{
-  gap: 30px;
+  gap: 15px;
 }
 .tesla-text-main {
   text-align: center;
@@ -1017,20 +1019,26 @@ height: 40px;
 width: 40px;
 }
 
-  .t-img {
+.t-img {
     justify-content: space-around;
+    gap: 1rem;
   }
 
 
   .demo-container {
-    padding: 0 20px;
+  padding: 30px 20px;
   font-size: 15px;
 }
 
 .demo-container a{
-  font-size: 25px;
+  font-size: 15px;
   padding: 10px 25px;
 }
+.demo-hed{
+  font-size: 25px;
+}
+
+
 
 }
 
@@ -1085,6 +1093,11 @@ width: 40px;
   .tesla-img img {
     width: 100%;
   }
+  .t-img {
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
 
   .t-img .t-img2 {
     display: flex;
