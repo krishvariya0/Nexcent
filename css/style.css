@@ -16,7 +16,6 @@ body {
   height: 100vh;
 }
 
-
 .container {
   width: 100%;
   max-width: 1440px;
@@ -318,7 +317,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   opacity: 0.7;
-  
 }
 
 .pixelgrade a {
@@ -386,7 +384,7 @@ body {
   margin: 0;
 }
 
-.bus-img .bus-ctn p{
+.bus-img .bus-ctn p {
   opacity: 0.7;
 }
 /* =========================tesla================================*/
@@ -397,7 +395,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:80px
+  gap: 80px;
 }
 .tesla-img img {
   width: 336px;
@@ -417,7 +415,7 @@ body {
   opacity: 0.8;
   margin-bottom: 1rem;
   line-height: 1.6;
-   flex: 1;/* Takes remaining space */
+  flex: 1; /* Takes remaining space */
   max-width: 700px;
 }
 
@@ -439,7 +437,8 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.tesla-text-main.p h1,h4{
+.tesla-text-main.p h1,
+h4 {
   justify-content: left;
 }
 .t-img {
@@ -481,7 +480,7 @@ body {
 /* =======================marketing======================= */
 
 .marketing-container {
-/* box-sizing: content-box; */
+  /* box-sizing: content-box; */
   margin: 50px 0;
   text-align: center;
   background-color: #fff;
@@ -611,7 +610,6 @@ body {
 .footer-left {
   flex: 1;
   min-width: 220px;
-  
 }
 
 .footer-logo {
@@ -733,7 +731,6 @@ body {
   }
 }
 
-
 /* ===================== Media Queries ===================== */
 
 /* ========== Large Screens ========== */
@@ -790,7 +787,6 @@ body {
     gap: 5rem;
   }
 
-  
   .bus-img {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -804,15 +800,13 @@ body {
     text-align: center;
   }
 
-
   .tesla-container {
     gap: 10px;
   }
 
-.tesla-text .tesla-text-main{
-  text-align: center;
-}
-
+  .tesla-text .tesla-text-main {
+    text-align: center;
+  }
 }
 /* ========== Extra Small Devices (mobile-first) ========== */
 @media (max-width: 767px) {
@@ -860,7 +854,7 @@ body {
     text-align: justify;
     align-items: center;
   }
-  .pixelgrade-text{
+  .pixelgrade-text {
     align-items: center;
   }
 
@@ -876,7 +870,6 @@ body {
 
   .pixelgrade-text {
     width: 100%;
-
   }
 
   .pixelgrade-text h1 {
@@ -894,12 +887,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
-.bus-img .bus-ctn { 
+  .bus-img .bus-ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center; 
-    gap: 1rem; 
+    align-items: center;
+    gap: 1rem;
   }
 
   .cs {
@@ -910,13 +903,12 @@ body {
     font-size: 30px;
   }
 
-.tesla-text .tesla-text-main p,
-.tesla-text .tesla-text-main h1,
-.tesla-text .tesla-text-main h4{
-  text-align: justify;
-  padding: 0 20px;
-}
-
+  .tesla-text .tesla-text-main p,
+  .tesla-text .tesla-text-main h1,
+  .tesla-text .tesla-text-main h4 {
+    text-align: justify;
+    padding: 0 20px;
+  }
 }
 
 .demo-container {
@@ -924,7 +916,7 @@ body {
   font-size: 25px;
 }
 
-.demo-container a{
+.demo-container a {
   font-size: 15px;
   padding: 10px 25px;
 }
@@ -996,54 +988,50 @@ body {
     gap: 10px;
   }
 
-.tesla-container{
-  gap: 15px;
-}
-.tesla-text-main {
-  text-align: center;
-}
-.bus-ctn h1{
-  font-size: 25px;
-}
+  .tesla-container {
+    gap: 15px;
+  }
+  .tesla-text-main {
+    text-align: center;
+  }
+  .bus-ctn h1 {
+    font-size: 25px;
+  }
 
-.tesla-text .tesla-text-main p,
-.tesla-text .tesla-text-main h1,
-.tesla-text .tesla-text-main h4{
-  padding: 0 20px;
-}
+  .tesla-text .tesla-text-main p,
+  .tesla-text .tesla-text-main h1,
+  .tesla-text .tesla-text-main h4 {
+    padding: 0 20px;
+  }
 
-.t-img .t-img2 img {
-justify-content: space-between;
-padding-left:20px;
-height: 40px;
-width: 40px;
-}
+  .t-img .t-img2 img {
+    justify-content: space-between;
+    padding-left: 20px;
+    height: 40px;
+    width: 40px;
+  }
 
-.t-img {
+  .t-img {
     justify-content: space-around;
-    gap:10px;
+    gap: 10px;
   }
 
   .t-img2 {
     gap: 1rem;
   }
 
-
   .demo-container {
-  padding: 30px 20px;
-  font-size: 15px;
-}
+    padding: 30px 20px;
+    font-size: 15px;
+  }
 
-.demo-container a{
-  font-size: 15px;
-  padding: 10px 25px;
-}
-.demo-hed{
-  font-size: 25px;
-}
-
-
-
+  .demo-container a {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  .demo-hed {
+    font-size: 25px;
+  }
 }
 
 /* ========== Devices up to 375px ========== */
@@ -1090,10 +1078,10 @@ width: 40px;
     width: 100px;
   }
 
-  .bus-ctn h1{
-  font-size: 20px;
-  padding: 0 5px;
-}
+  .bus-ctn h1 {
+    font-size: 20px;
+    padding: 0 5px;
+  }
   .tesla-img img {
     width: 100%;
   }
@@ -1101,7 +1089,6 @@ width: 40px;
     justify-content: space-around;
     gap: 1rem;
   }
-
 
   .t-img .t-img2 {
     display: flex;
@@ -1139,7 +1126,7 @@ width: 40px;
     transition: right 0.4s ease-in-out;
     z-index: 1000;
   }
- .nav-links .bouton {
+  .nav-links .bouton {
     display: flex;
     flex-direction: row;
     /* flex-direction: column; */
@@ -1166,15 +1153,15 @@ width: 40px;
   }
 
   #menu-toggle:checked ~ .bouton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  position: fixed;
-  bottom: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1001
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
   }
 
   #menu-toggle:checked ~ .hamburger-line .line1 {
@@ -1211,19 +1198,17 @@ width: 40px;
     flex-direction: column;
     align-items: center;
   }
-  .cs{
-    width:100%;
+  .cs {
+    width: 100%;
   }
 
-  .bus-img .bus-ctn { 
+  .bus-img .bus-ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center; 
-    gap: 1rem; 
+    align-items: center;
+    gap: 1rem;
   }
-
-  
 }
 @media (max-width: 530px) {
   .main-hed,
